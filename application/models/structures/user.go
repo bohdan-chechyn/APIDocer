@@ -1,0 +1,1 @@
+package apidocer.models.structures.user;
