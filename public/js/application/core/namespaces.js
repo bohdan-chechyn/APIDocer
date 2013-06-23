@@ -1,0 +1,1 @@
+var AD = { pages: {}, models: {}, shared: {}};

@@ -1,0 +1,51 @@
+<form class="form-horizontal">
+  <div class="control-group">
+    <label class="control-label" for="name">Name</label>
+    <div class="controls">
+      <input type="text" ng-model="name" id="name"><br>
+    </div>
+  </div>
+  <div class="control-group">
+  <label class="control-label" for="entity">Entity</label>
+    <div class="controls">
+      <select id="type" ng-model="entityId" ng-options="s.name for s in entities"></select>
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="type">Type</label>
+    <div class="controls">
+      <select id="type" ng-model="type">
+		<option value="get">GET</option>
+		<option value="post">POST</option>
+		<option value="put">PUT</option>
+		<option value="delete">DELETE</option>
+	</select>
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="description">Description</label>
+    <div class="controls">
+      <textarea ng-model="description" id="description"></textarea><br>
+    </div>
+  </div>
+
+  <div class="control-group">
+    <label class="control-label" for="request">Request</label>
+    <div class="controls">
+      <textarea ng-model="request" id="request"></textarea><br>
+    </div>
+  </div>
+
+  <div class="control-group">
+    <label class="control-label" for="response">Response</label>
+    <div class="controls">
+      <textarea ng-model="response" id="response"></textarea><br>
+    </div>
+  </div>
+
+  <div class="control-group">
+    <div class="controls">
+      <button type="submit" class="btn btn-primary" ng-click="postMethod()">Add method</button>
+    </div>
+  </div>
+</form>

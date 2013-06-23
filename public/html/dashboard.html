@@ -1,0 +1,23 @@
+<a href="#addMethod">Add method</a>
+<div class="filters">
+</div>
+<div ng-repeat="method in methods" class="method-container {{method.type}} row">
+ 	<h4 class="span1">{{method.type}}</h4>
+	<div class="span6">
+		<h4>{{method.name}}</h4>
+		<p>{{method.description}}</p>
+		<ul class="nav nav-pills">
+		  <li><a ng-click="showRequest({{method._id}})">Request</a></li>
+		  <li><a ng-click="showResponse({{method._id}})">Response</a></li>
+		</ul>
+	</div>
+</div>
+
+<div class="entities-panel">
+	<div>
+		<h4><a href="#dashboard/">All</a></h4>
+	</div>
+	<div ng-repeat="entity in entities">
+	 	<h4><a href="#dashboard/entity/{{entity.id}}">{{entity.name}}</a></h4>
+	</div>
+</div>

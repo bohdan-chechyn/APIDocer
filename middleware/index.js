@@ -1,3 +1,3 @@
-module.explort = {
+module.export = {
 	session: require('./session')
 }
